@@ -1,8 +1,11 @@
 const express = require('express')
 const axios = require('axios')
+const path = require('path')
 
 const app = express()
 const port = process.env.PORT || 5000
+
+app.use(express.static(path.join(__dirname, 'chainalysis/build')))
 
 const binanceBtcURL = 'https://api.binance.com/api/v3/ticker/bookTicker?symbol=BTCUSDT'
 const binanceEthURL = 'https://api.binance.com/api/v3/ticker/bookTicker?symbol=ETHUSDT'
