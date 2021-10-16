@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.updatedTime { 
+  margin-top: -12px;
+}
+
+.btc, .eth { 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+img { 
+  width: 20px;
+}
+
+.ethLogo { 
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+
+.btcLogo { 
+  margin-bottom: 4px;
+  margin-right: 5px;
+}
+
+.btcTable, .ethTable { 
+  overflow: hidden;
+  border-radius: 12px;
+}
