@@ -62,14 +62,14 @@ const App = () => {
 
   useEffect(() => {
     updatePrices()
-    setInterval(updatePrices, 60000)
+    setInterval(updatePrices, 30000)
   }, [])
 
   return (
     <div className="App">
 
       <h1>Chainalysis App</h1>
-      <p>Updates every 60 seconds</p>
+      <p>Updates every 30 seconds</p>
       <p className="updatedTime">Last updated at {lastUpdated}</p>
 
       <div className="btc">
