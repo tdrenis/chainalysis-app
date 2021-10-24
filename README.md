@@ -16,7 +16,10 @@ could've been made within the React frontend through a useEffect hook.
 To scale the solution to this level, I would rework the way in which the exchange 
 API's are called, removing the timed interval with useEffect. Instead, I would 
 make these calls on a timed interval within express and save the price information 
-in a small database so that the prices presented are consistent across all users.  
+in a small database so that the prices presented are consistent across all users. 
+This would help to prevent users from consistently refreshing the app and making 
+new API requests to the exchanges which could potentially result in an API rate 
+limit being hit.
 
 # Question 4
 
